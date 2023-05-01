@@ -17,85 +17,53 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: image,
+      appBar: AppBar(
+        actions: [
+          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.camera)),
+          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.search)),
+          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.menu)),
+        ],
+        title: Text("WhatsApp"),
+        bottom: PreferredSize(
+            child: DefaultTabController(
+              length: 4,
+              initialIndex: 1,
+              child: TabBar(tabs: [
+                Tab(
+                  icon: Icon(Icons.group),
+                ),
+                Tab(
+                  text: "Chats",
+                ),
+                Tab(
+                  text: "Status",
+                ),
+                Tab(
+                  text: "Calls",
+                )
+              ]),
             ),
-            SizedBox(
-              height: 100,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text("Arbaz"), Text("Hello Sir,")],
+            preferredSize: Size(double.infinity, 50)),
+      ),
+      body: ListView(
+        children: [
+          for (int i = 0; i < 1000; i++)
+            ListTile(
+              leading: Container(
+                width: 80,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(MyNetowrkImageUrl.owl),
+                    ),
+                    color: Colors.red,
+                    shape: BoxShape.circle),
               ),
-            ),
-            Text("12:00 PM")
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: image,
-            ),
-            SizedBox(
-              height: 100,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text("Arbaz"), Text("Hello Sir,")],
-              ),
-            ),
-            Text("12:00 PM")
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: image,
-            ),
-            SizedBox(
-              height: 100,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text("Arbaz"), Text("Hello Sir,")],
-              ),
-            ),
-            Text("12:00 PM")
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(
-              height: 100,
-              width: 100,
-              child: image,
-            ),
-            SizedBox(
-              height: 100,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Text("Arbaz"), Text("Hello Sir,")],
-              ),
-            ),
-            Text("12:00 PM")
-          ],
-        )
-      ],
-    ));
+              title: Text("Arbaz $i"),
+              subtitle: Text("Hello"),
+              trailing: Text("4:00 PM"),
+            )
+        ],
+      ),
+    );
   }
 }
