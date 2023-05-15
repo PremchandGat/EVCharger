@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:learning/langugage/network_images.dart';
 
@@ -24,21 +26,30 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int count = 0;
-  _increaseCount() {
-    count = count + 1;
+  int a = 10;
+
+  bool doIshowAppBar = false;
+
+  /// [_addItem] is used to increase the value of a
+  _addItem() {
+    a = a + 1;
+    debugPrint("Hii , i am inside function");
     setState(() {});
-    print("Value of count is $count");
+  }
+
+  /// [_showOrHideAppBar] is used to show or hide app bar
+  _showOrHideAppBar() {
+    doIshowAppBar = !doIshowAppBar;
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
+    debugPrint("Building whole UI again");
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Text("Total count of value is $count"),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: _increaseCount),
+      appBar: doIshowAppBar ? AppBar() : null,
+      body: Center(child: Text("Hello world $a")),
+      floatingActionButton: FloatingActionButton(onPressed: _showOrHideAppBar),
     );
   }
 }
