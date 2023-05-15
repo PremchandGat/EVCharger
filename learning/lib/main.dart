@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:learning/langugage/mytext.dart';
 import 'package:learning/langugage/network_images.dart';
 
 void main() {
@@ -26,16 +27,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int a = 10;
+  /// [myFieldController] Controller for my TextFiled in this page
+  TextEditingController myFieldController = TextEditingController();
 
+  /// [doIshowAppBar] Decides whether AppBar we have to show or not
   bool doIshowAppBar = false;
 
-  /// [_addItem] is used to increase the value of a
-  _addItem() {
-    a = a + 1;
-    debugPrint("Hii , i am inside function");
-    setState(() {});
-  }
+  /// [valueOfMyTextField] This stores value of my TextField in this page
+  String valueOfMyTextField = "";
 
   /// [_showOrHideAppBar] is used to show or hide app bar
   _showOrHideAppBar() {
@@ -43,12 +42,39 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {});
   }
 
+  /// [_upadteControllerOfTextField] this update text inside my TextField
+  _upadteControllerOfTextField() {
+    myFieldController.text = "Hello world";
+  }
+
+  /// [_updateUiForTextField] This function update ui when Text Filed changes
+  _updateUiForTextField(String val) => setState(() {
+        valueOfMyTextField = val;
+      });
+
   @override
   Widget build(BuildContext context) {
-    debugPrint("Building whole UI again");
     return Scaffold(
       appBar: doIshowAppBar ? AppBar() : null,
-      body: Center(child: Text("Hello world $a")),
+      body: SafeArea(
+          child: Column(
+        children: [
+          TextField(
+            controller: myFieldController,
+            decoration: const InputDecoration(hintText: MyText.enterYourName),
+            onChanged: _updateUiForTextField,
+          ),
+          Text("Valud of my Text filed: ${myFieldController.text}"),
+          FilledButton(
+              onPressed: () {
+                myFieldController.clear();
+              },
+              child: const Text(MyText.clearFiled)),
+          FilledButton(
+              onPressed: _upadteControllerOfTextField,
+              child: const Text("Update Value"))
+        ],
+      )),
       floatingActionButton: FloatingActionButton(onPressed: _showOrHideAppBar),
     );
   }
