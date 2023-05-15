@@ -3,6 +3,11 @@ import 'package:learning/langugage/network_images.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          color: Colors.green,
+        ),
+        primaryColor: Colors.red),
     home: HomeScreen(),
   ));
 }
@@ -11,59 +16,29 @@ var image = const Image(
   image: NetworkImage(MyNetowrkImageUrl.owl),
 );
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int count = 0;
+  _increaseCount() {
+    count = count + 1;
+    setState(() {});
+    print("Value of count is $count");
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: [
-          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.camera)),
-          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.search)),
-          Padding(padding: EdgeInsets.all(8), child: Icon(Icons.menu)),
-        ],
-        title: Text("WhatsApp"),
-        bottom: PreferredSize(
-            child: DefaultTabController(
-              length: 4,
-              initialIndex: 1,
-              child: TabBar(tabs: [
-                Tab(
-                  icon: Icon(Icons.group),
-                ),
-                Tab(
-                  text: "Chats",
-                ),
-                Tab(
-                  text: "Status",
-                ),
-                Tab(
-                  text: "Calls",
-                )
-              ]),
-            ),
-            preferredSize: Size(double.infinity, 50)),
+      appBar: AppBar(),
+      body: Center(
+        child: Text("Total count of value is $count"),
       ),
-      body: ListView(
-        children: [
-          for (int i = 0; i < 1000; i++)
-            ListTile(
-              leading: Container(
-                width: 80,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage(MyNetowrkImageUrl.owl),
-                    ),
-                    color: Colors.red,
-                    shape: BoxShape.circle),
-              ),
-              title: Text("Arbaz $i"),
-              subtitle: Text("Hello"),
-              trailing: Text("4:00 PM"),
-            )
-        ],
-      ),
+      floatingActionButton: FloatingActionButton(onPressed: _increaseCount),
     );
   }
 }
