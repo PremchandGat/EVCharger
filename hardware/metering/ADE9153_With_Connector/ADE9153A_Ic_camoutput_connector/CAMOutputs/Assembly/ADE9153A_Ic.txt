@@ -1,0 +1,5 @@
+Partlist exported from C:/Users/shivk/Documents/EAGLE/projects/ADE9153A_Ic/ADE9153A_Ic.sch at 17-05-2023 12:01
+
+Qty Value                      Device                     Package              Parts Description        AVAILABILITY DESCRIPTION                               MF             MP           PACKAGE                  PRICE PURCHASE-URL                                                 
+1   ADE9153AACPZ               ADE9153AACPZ               QFN50P500X500X80-33N U$1   Check availability In Stock      Energy Metering IC with Autocalibration  Analog Devices ADE9153AACPZ LFCSP -32 Analog Devices None  https://pricing.snapeda.com/search/part/ADE9153AACPZ/?ref=eda
+1   ADE9153A_BASEADE9153A_BASE ADE9153A_BASEADE9153A_BASE ADE9153A_BASE        U$2                                                                                                                                                                                                     
