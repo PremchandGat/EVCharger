@@ -6,7 +6,7 @@ GND 			GND
 
 ADE9153A					ESP32
 Vcc 	 					3.3V
-RST (Reset)  				GPIO0
+RST (Reset)  				GPIO17
 GND 		 				GND
 MISO 						GPIO19(MISO)
 MOSI						GPIO23(MOSI)
