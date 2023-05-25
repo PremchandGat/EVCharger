@@ -30,12 +30,26 @@ We are creating whole project in multiple modules as following-
 5. LED
 ### Metering
 1. ADE9153A
-2. WSK12161L000FEA 
+2. WSK12161L000FEA (Shunt Resistor)
 3. LED
-4. Capacitor
+4. Capacitors
+    1. 4.7uF (9  Quantity)
+    2. 0.1uf (9  Quantity)
+    3. 0.47uf (1  Quantity)
+    4. 0.15uF (1 Quantity)
+    5. 22pF (2 Quantity)
+    7. 100nF (6 Quantity)
+    8. 1uF (1 Quantity)
 5. Resistor
-6. Schotkky Diode
-7. Oscillator 12.288MHz ±30ppm
+    1. 150Ω (2 Quantity)
+    2. 1kΩ (1 Quantity)
+    3. 330kΩ (3 Quantity)
+    5. 250KΩ (4 Quantity)
+    6. 10KΩ (2 Quantity)
+7. Oscillator 12.288MHz
+    1. Operating temperature: −40°C to +85°C
+    2. Frequency tolerance: ≤ ±50 ppm
+    3. Frequency stability: ≤ ±30 ppm
 
 ### Other modules
 1. I2C
