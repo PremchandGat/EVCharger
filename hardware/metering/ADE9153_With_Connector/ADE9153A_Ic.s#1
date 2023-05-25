@@ -367,7 +367,8 @@
 </plain>
 <instances>
 <instance part="U$1" gate="A" x="68.58" y="7.62" smashed="yes">
-<attribute name="VALUE" x="96.2406" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="99.4156" y="16.7386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="98.7806" y="14.1986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="U$2" gate="G$1" x="-15.24" y="-12.7" smashed="yes" rot="R180"/>
 </instances>
