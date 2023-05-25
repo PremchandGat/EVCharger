@@ -8127,8 +8127,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="GSM_VCC" gate="G$1" pin="1"/>
-<label x="223.52" y="-45.72" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="223.52" y1="-45.72" x2="223.52" y2="-48.26" width="0.1524" layer="91"/>
+<label x="223.52" y="-43.18" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="223.52" y1="-43.18" x2="223.52" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

@@ -7253,7 +7253,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D1" library="display-hp" library_urn="urn:adsk.eagle:library:212" deviceset="HLMP6" device="" package3d_urn="urn:adsk.eagle:package:12992/1"/>
 <part name="LCD" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA04-156" device="" package3d_urn="urn:adsk.eagle:package:8081564/1"/>
 <part name="GSM_VCC" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-156" device="" package3d_urn="urn:adsk.eagle:package:8081562/1"/>
-<part name="J1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA08-156" device="" package3d_urn="urn:adsk.eagle:package:8081557/1"/>
+<part name="RFID" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA08-156" device="" package3d_urn="urn:adsk.eagle:package:8081557/1"/>
 <part name="UPLOAD_PROGRAMME" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA06-156" device="" package3d_urn="urn:adsk.eagle:package:8081593/1"/>
 </parts>
 <sheets>
@@ -7342,7 +7342,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="NAME" x="302.26" y="20.32" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="306.07" y="20.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$2" x="264.16" y="17.78" smashed="yes" rot="R270">
+<instance part="RFID" gate="G$2" x="264.16" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="264.16" y="-2.54" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="260.35" y="-2.54" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -7549,7 +7549,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <label x="259.08" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="3"/>
+<pinref part="RFID" gate="G$2" pin="3"/>
 <wire x1="259.08" y1="12.7" x2="261.62" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7589,7 +7589,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <label x="259.08" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="1"/>
+<pinref part="RFID" gate="G$2" pin="1"/>
 <wire x1="259.08" y1="17.78" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7815,7 +7815,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <label x="251.46" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="251.46" y1="0" x2="261.62" y2="0" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$2" pin="8"/>
+<pinref part="RFID" gate="G$2" pin="8"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO15"/>
@@ -7831,7 +7831,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="RFID_SCK" class="0">
 <segment>
 <label x="236.22" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="7"/>
+<pinref part="RFID" gate="G$2" pin="7"/>
 <wire x1="236.22" y1="2.54" x2="261.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7848,7 +7848,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="RFID_MOSI" class="0">
 <segment>
 <label x="259.08" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="6"/>
+<pinref part="RFID" gate="G$2" pin="6"/>
 <wire x1="259.08" y1="5.08" x2="261.62" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7865,21 +7865,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="REID_MISO" class="0">
 <segment>
 <label x="236.22" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="5"/>
+<pinref part="RFID" gate="G$2" pin="5"/>
 <wire x1="236.22" y1="7.62" x2="261.62" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFID_IRQ" class="0">
 <segment>
 <label x="251.46" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="4"/>
+<pinref part="RFID" gate="G$2" pin="4"/>
 <wire x1="261.62" y1="10.16" x2="251.46" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFID_RST" class="0">
 <segment>
 <label x="251.46" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$2" pin="2"/>
+<pinref part="RFID" gate="G$2" pin="2"/>
 <wire x1="251.46" y1="15.24" x2="261.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
