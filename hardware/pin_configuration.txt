@@ -1,0 +1,36 @@
+Lcd 16*2 		ESP32
+SCL 			GPIO22
+SDA 			GPIO21
+5V 			5V
+GND 			GND
+
+ADE9153A					ESP32
+Vcc 	 					3.3V
+RST (Reset)  				GPIO17
+GND 		 				GND
+MISO 						GPIO19(MISO)
+MOSI						GPIO23(MOSI)
+SCK			 			GPIO18(SCK)
+CF2				 		GPIO21(SDA)
+CS						GPIO5(CS)
+
+RFID 						ESP32
+CS/SS 					GPIO15  
+SCK 						GPIO14
+MOSI 						GPIO13
+MISO 						GPIO12
+IRQ						EMPTY
+GND 						GND
+RST						GPIO27
+vcc 						3.3v
+
+
+GSM[GSM800L(Recommanded),GSM800c]   ESP32
+RX 						GPIO2
+TX 						GPIO4
+GND 						GND
+RST(reset) 					35
+(External Power Supply Needed For GSM)
+
+Extra GPIO
+

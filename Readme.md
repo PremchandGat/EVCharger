@@ -19,7 +19,7 @@ We are creating whole project in multiple modules as following-
 ### Power Supply
 1. Transformer
 2. Diode
-3. Capasitor
+3. Capacitor
 4. LM7805
 ### Microcontroller
 1. ESP32-WROOM32 => Microcontroller chip
