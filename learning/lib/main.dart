@@ -27,12 +27,14 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+       new Container(child: new Image.network(
+            'https://images.pexels.com/photos/1525043/pexels-photo-1525043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',) 
+         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(
             height: 200,),
-            CupertinoButton.filled(child: Text("Go to HomeScreen"), onPressed: (){
+            CupertinoButton.filled(child: Text("log in"), onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
             })
           ],
