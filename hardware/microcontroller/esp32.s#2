@@ -7332,6 +7332,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <sheet>
 <plain>
 <frame x1="-109.22" y1="-160.02" x2="363.22" y2="157.48" columns="8" rows="5" layer="91"/>
+<text x="109.22" y="-10.16" size="1.778" layer="91">ESP32_Base</text>
+<text x="271.78" y="38.1" size="1.778" layer="91">ESP32</text>
+<text x="238.76" y="-101.6" size="1.778" layer="91">LCD, GSM, RFID, GSM external Power</text>
+<text x="106.68" y="-104.14" size="1.778" layer="91">Power 5V to 3.3V</text>
+<text x="-15.24" y="-104.14" size="1.778" layer="91">BOOT, ENABLE, Programming Pins</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="172.72" y="88.9" smashed="yes">
@@ -7923,9 +7928,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="RFID_MOSI" class="0">
 <segment>
-<label x="185.42" y="-15.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="185.42" y="-12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="RFID" gate="G$2" pin="6"/>
-<wire x1="185.42" y1="-15.24" x2="185.42" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-12.7" x2="185.42" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO13"/>
@@ -7934,8 +7939,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="16"/>
-<wire x1="48.26" y1="10.16" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
-<label x="48.26" y="7.62" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
+<label x="48.26" y="5.08" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="REID_MISO" class="0">
@@ -7943,6 +7948,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="187.96" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="RFID" gate="G$2" pin="5"/>
 <wire x1="187.96" y1="7.62" x2="187.96" y2="-17.78" width="0.1524" layer="91"/>
+<label x="193.04" y="12.7" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RFID_IRQ" class="0">
@@ -7977,8 +7983,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="14"/>
-<wire x1="27.94" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
-<label x="25.4" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<label x="20.32" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ADE_RESET" class="0">
@@ -8122,8 +8128,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="GSM_VCC" gate="G$1" pin="1"/>
-<label x="223.52" y="-45.72" size="1.778" layer="95" rot="R90" xref="yes"/>
-<wire x1="223.52" y1="-45.72" x2="223.52" y2="-48.26" width="0.1524" layer="91"/>
+<label x="223.52" y="-43.18" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="223.52" y1="-43.18" x2="223.52" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
