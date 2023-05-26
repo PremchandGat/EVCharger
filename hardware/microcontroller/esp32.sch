@@ -7928,9 +7928,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="RFID_MOSI" class="0">
 <segment>
-<label x="185.42" y="-15.24" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="185.42" y="-12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="RFID" gate="G$2" pin="6"/>
-<wire x1="185.42" y1="-15.24" x2="185.42" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-12.7" x2="185.42" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="IO13"/>
@@ -7939,15 +7939,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="16"/>
-<wire x1="48.26" y1="10.16" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
-<label x="48.26" y="7.62" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="REID_MISO" class="0">
-<segment>
-<label x="187.96" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
-<pinref part="RFID" gate="G$2" pin="5"/>
-<wire x1="187.96" y1="7.62" x2="187.96" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="10.16" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
+<label x="48.26" y="5.08" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="RFID_IRQ" class="0">
@@ -7982,8 +7975,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="14"/>
-<wire x1="27.94" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
-<label x="25.4" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<label x="20.32" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="RFID" gate="G$2" pin="5"/>
+<wire x1="187.96" y1="-17.78" x2="187.96" y2="7.62" width="0.1524" layer="91"/>
+<label x="187.96" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="ADE_RESET" class="0">
