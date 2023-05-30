@@ -1,1 +1,0 @@
-const qrScanRoute = '/qrScanner';
