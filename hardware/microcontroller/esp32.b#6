@@ -2540,9 +2540,6 @@ design rules under a new name.</description>
 <wire x1="32.503171875" y1="50.405946875" x2="32.628071875" y2="50.530846875" width="1.016" layer="16"/>
 <wire x1="32.735" y1="54.04" x2="32.735" y2="50.530846875" width="1.016" layer="1"/>
 </signal>
-<signal name="REID_MISO">
-<contactref element="RFID" pad="5"/>
-</signal>
 <signal name="RFID_RST">
 <contactref element="IC1" pad="12"/>
 <contactref element="U$1" pad="12"/>
@@ -2572,6 +2569,8 @@ design rules under a new name.</description>
 <wire x1="28.68" y1="55.04" x2="28.68" y2="27.607025" width="0.5" layer="1"/>
 <wire x1="13.417375" y1="12.3444" x2="10.16" y2="12.3444" width="0.5" layer="1"/>
 <wire x1="28.68" y1="27.607025" x2="13.417375" y2="12.3444" width="0.5" layer="1"/>
+<contactref element="RFID" pad="5"/>
+<wire x1="10.16" y1="12.3444" x2="-11.43" y2="46.4312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADE_RESET">
 <contactref element="IC1" pad="28"/>

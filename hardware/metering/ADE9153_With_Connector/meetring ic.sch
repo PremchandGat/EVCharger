@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.000000123031" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6489,24 +6489,24 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </devicesets>
 </library>
 <library name="con-amp" urn="urn:adsk.eagle:library:127">
-<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
-RJ45 Jack connectors&lt;br&gt;
- Based on the previous libraris:
- &lt;ul&gt;
- &lt;li&gt;amp.lbr
- &lt;li&gt;amp-j.lbr
- &lt;li&gt;amp-mta.lbr
- &lt;li&gt;amp-nlok.lbr
- &lt;li&gt;amp-sim.lbr
- &lt;li&gt;amp-micro-match.lbr
- &lt;/ul&gt;
- Sources :
- &lt;ul&gt;
- &lt;li&gt;Catalog 82066 Revised 11-95 
- &lt;li&gt;Product Guide 296785 Rev. 8-99
- &lt;li&gt;Product Guide CD-ROM 1999
- &lt;li&gt;www.amp.com
- &lt;/ul&gt;
+<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
+RJ45 Jack connectors&lt;br&gt;
+ Based on the previous libraris:
+ &lt;ul&gt;
+ &lt;li&gt;amp.lbr
+ &lt;li&gt;amp-j.lbr
+ &lt;li&gt;amp-mta.lbr
+ &lt;li&gt;amp-nlok.lbr
+ &lt;li&gt;amp-sim.lbr
+ &lt;li&gt;amp-micro-match.lbr
+ &lt;/ul&gt;
+ Sources :
+ &lt;ul&gt;
+ &lt;li&gt;Catalog 82066 Revised 11-95 
+ &lt;li&gt;Product Guide 296785 Rev. 8-99
+ &lt;li&gt;Product Guide CD-ROM 1999
+ &lt;li&gt;www.amp.com
+ &lt;/ul&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="1X2MTA" urn="urn:adsk.eagle:footprint:8080275/1" library_version="4">
@@ -6574,6 +6574,247 @@ RJ45 Jack connectors&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="esp32_base_footprint">
+<packages>
+<package name="1X14MTA" urn="urn:adsk.eagle:footprint:8080304/1" locally_modified="yes">
+<description>&lt;b&gt;AMP MTA connector&lt;/b&gt;</description>
+<pad name="8" x="-27.94" y="-4.5212" drill="1.6764" shape="long" rot="R180"/>
+<pad name="7" x="-27.94" y="-0.5588" drill="1.6764" shape="long" rot="R180"/>
+<pad name="6" x="-27.94" y="3.4036" drill="1.6764" shape="long" rot="R180"/>
+<pad name="5" x="-27.94" y="7.366" drill="1.6764" shape="long" rot="R180"/>
+<pad name="4" x="-27.94" y="11.3284" drill="1.6764" shape="long" rot="R180"/>
+<pad name="3" x="-27.94" y="15.2908" drill="1.6764" shape="long" rot="R180"/>
+<pad name="2" x="-27.94" y="19.2532" drill="1.6764" shape="long" rot="R180"/>
+<pad name="1" x="-27.94" y="23.2156" drill="1.6764" shape="long" rot="R180"/>
+<pad name="9" x="-27.94" y="-8.4836" drill="1.6764" shape="long" rot="R180"/>
+<pad name="10" x="-27.94" y="-12.446" drill="1.6764" shape="long" rot="R180"/>
+<pad name="11" x="-27.94" y="-16.4084" drill="1.6764" shape="long" rot="R180"/>
+<pad name="12" x="-27.94" y="-20.3708" drill="1.6764" shape="long" rot="R180"/>
+<pad name="13" x="-27.94" y="-24.3332" drill="1.6764" shape="long" rot="R180"/>
+<pad name="14" x="-27.94" y="-28.2956" drill="1.6764" shape="long" rot="R180"/>
+<rectangle x1="-28.448" y1="22.7076" x2="-27.432" y2="23.7236" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="18.7452" x2="-27.432" y2="19.7612" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="14.7828" x2="-27.432" y2="15.7988" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="10.8204" x2="-27.432" y2="11.8364" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="6.858" x2="-27.432" y2="7.874" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="2.8956" x2="-27.432" y2="3.9116" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-1.0668" x2="-27.432" y2="-0.0508" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-5.0292" x2="-27.432" y2="-4.0132" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-8.9916" x2="-27.432" y2="-7.9756" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-12.954" x2="-27.432" y2="-11.938" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-16.9164" x2="-27.432" y2="-15.9004" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-20.8788" x2="-27.432" y2="-19.8628" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-24.8412" x2="-27.432" y2="-23.8252" layer="21" rot="R90"/>
+<rectangle x1="-28.448" y1="-28.8036" x2="-27.432" y2="-27.7876" layer="21" rot="R90"/>
+<pad name="31" x="22.86" y="-4.5212" drill="1.6764" shape="long" rot="R180"/>
+<pad name="32" x="22.86" y="-0.5588" drill="1.6764" shape="long" rot="R180"/>
+<pad name="33" x="22.86" y="3.4036" drill="1.6764" shape="long" rot="R180"/>
+<pad name="34" x="22.86" y="7.366" drill="1.6764" shape="long" rot="R180"/>
+<pad name="35" x="22.86" y="11.3284" drill="1.6764" shape="long" rot="R180"/>
+<pad name="36" x="22.86" y="15.2908" drill="1.6764" shape="long" rot="R180"/>
+<pad name="37" x="22.86" y="19.2532" drill="1.6764" shape="long" rot="R180"/>
+<pad name="38" x="22.86" y="23.2156" drill="1.6764" shape="long" rot="R180"/>
+<pad name="30" x="22.86" y="-8.4836" drill="1.6764" shape="long" rot="R180"/>
+<pad name="29" x="22.86" y="-12.446" drill="1.6764" shape="long" rot="R180"/>
+<pad name="28" x="22.86" y="-16.4084" drill="1.6764" shape="long" rot="R180"/>
+<pad name="27" x="22.86" y="-20.3708" drill="1.6764" shape="long" rot="R180"/>
+<pad name="26" x="22.86" y="-24.3332" drill="1.6764" shape="long" rot="R180"/>
+<pad name="25" x="22.86" y="-28.2956" drill="1.6764" shape="long" rot="R180"/>
+<rectangle x1="22.352" y1="22.7076" x2="23.368" y2="23.7236" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="18.7452" x2="23.368" y2="19.7612" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="14.7828" x2="23.368" y2="15.7988" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="10.8204" x2="23.368" y2="11.8364" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="6.858" x2="23.368" y2="7.874" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="2.8956" x2="23.368" y2="3.9116" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-1.0668" x2="23.368" y2="-0.0508" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-5.0292" x2="23.368" y2="-4.0132" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-8.9916" x2="23.368" y2="-7.9756" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-12.954" x2="23.368" y2="-11.938" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-16.9164" x2="23.368" y2="-15.9004" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-20.8788" x2="23.368" y2="-19.8628" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-24.8412" x2="23.368" y2="-23.8252" layer="21" rot="R90"/>
+<rectangle x1="22.352" y1="-28.8036" x2="23.368" y2="-27.7876" layer="21" rot="R90"/>
+<pad name="22" x="7.0612" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="21" x="3.0988" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="20" x="-0.8636" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="19" x="-4.826" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="18" x="-8.7884" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="17" x="-12.7508" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="16" x="-16.7132" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="15" x="-20.6756" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="23" x="11.0236" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<pad name="24" x="14.986" y="-33.02" drill="1.6764" shape="long" rot="R270"/>
+<rectangle x1="-21.1836" y1="-33.528" x2="-20.1676" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="-17.2212" y1="-33.528" x2="-16.2052" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="-13.2588" y1="-33.528" x2="-12.2428" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="-9.2964" y1="-33.528" x2="-8.2804" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="-5.334" y1="-33.528" x2="-4.318" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="-1.3716" y1="-33.528" x2="-0.3556" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="2.5908" y1="-33.528" x2="3.6068" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="6.5532" y1="-33.528" x2="7.5692" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="10.5156" y1="-33.528" x2="11.5316" y2="-32.512" layer="21" rot="R180"/>
+<rectangle x1="14.478" y1="-33.528" x2="15.494" y2="-32.512" layer="21" rot="R180"/>
+<wire x1="-25.4" y1="24.13" x2="-25.4" y2="-30.48" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-30.48" x2="20.32" y2="-30.48" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-30.48" x2="20.32" y2="24.13" width="0.127" layer="21"/>
+<wire x1="20.32" y1="24.13" x2="25.4" y2="24.13" width="0.127" layer="21"/>
+<wire x1="25.4" y1="24.13" x2="25.4" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-35.56" x2="-30.48" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="-30.48" y1="-35.56" x2="-30.48" y2="24.13" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="24.13" x2="-29.21" y2="24.13" width="0.127" layer="21"/>
+<wire x1="-29.21" y1="24.13" x2="-30.48" y2="24.13" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP_CONNECTOR">
+<pin name="1" x="-30.48" y="22.86" length="middle"/>
+<pin name="2" x="-30.48" y="17.78" length="middle"/>
+<pin name="3" x="-30.48" y="12.7" length="middle"/>
+<pin name="4" x="-30.48" y="7.62" length="middle"/>
+<pin name="5" x="-30.48" y="2.54" length="middle"/>
+<pin name="6" x="-30.48" y="-2.54" length="middle"/>
+<pin name="7" x="-30.48" y="-7.62" length="middle"/>
+<pin name="8" x="-30.48" y="-12.7" length="middle"/>
+<pin name="9" x="-30.48" y="-17.78" length="middle"/>
+<pin name="10" x="-30.48" y="-22.86" length="middle"/>
+<pin name="11" x="-30.48" y="-27.94" length="middle"/>
+<pin name="12" x="-30.48" y="-33.02" length="middle"/>
+<pin name="13" x="-30.48" y="-38.1" length="middle"/>
+<pin name="14" x="-30.48" y="-43.18" length="middle"/>
+<pin name="15" x="-15.24" y="-53.34" length="middle" rot="R90"/>
+<pin name="16" x="-10.16" y="-53.34" length="middle" rot="R90"/>
+<pin name="17" x="-5.08" y="-53.34" length="middle" rot="R90"/>
+<pin name="18" x="0" y="-53.34" length="middle" rot="R90"/>
+<pin name="19" x="5.08" y="-53.34" length="middle" rot="R90"/>
+<pin name="20" x="10.16" y="-53.34" length="middle" rot="R90"/>
+<pin name="21" x="15.24" y="-53.34" length="middle" rot="R90"/>
+<pin name="22" x="20.32" y="-53.34" length="middle" rot="R90"/>
+<pin name="23" x="25.4" y="-53.34" length="middle" rot="R90"/>
+<pin name="24" x="30.48" y="-53.34" length="middle" rot="R90"/>
+<pin name="25" x="45.72" y="-43.18" length="middle" rot="R180"/>
+<pin name="26" x="45.72" y="-38.1" length="middle" rot="R180"/>
+<pin name="27" x="45.72" y="-33.02" length="middle" rot="R180"/>
+<pin name="28" x="45.72" y="-27.94" length="middle" rot="R180"/>
+<pin name="29" x="45.72" y="-22.86" length="middle" rot="R180"/>
+<pin name="30" x="45.72" y="-17.78" length="middle" rot="R180"/>
+<pin name="31" x="45.72" y="-12.7" length="middle" rot="R180"/>
+<pin name="32" x="45.72" y="-7.62" length="middle" rot="R180"/>
+<pin name="33" x="45.72" y="-2.54" length="middle" rot="R180"/>
+<pin name="34" x="45.72" y="2.54" length="middle" rot="R180"/>
+<pin name="35" x="45.72" y="7.62" length="middle" rot="R180"/>
+<pin name="36" x="45.72" y="12.7" length="middle" rot="R180"/>
+<pin name="37" x="45.72" y="17.78" length="middle" rot="R180"/>
+<pin name="38" x="45.72" y="22.86" length="middle" rot="R180"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-48.26" x2="40.64" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="40.64" y1="-48.26" x2="40.64" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LIB1">
+<gates>
+<gate name="G$1" symbol="ESP_CONNECTOR" x="-10.16" y="15.24"/>
+</gates>
+<devices>
+<device name="THROUGH_HOLE" package="1X14MTA">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OPTION_HOLE" package="1X14MTA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="29" pad="29"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="31" pad="31"/>
+<connect gate="G$1" pin="32" pad="32"/>
+<connect gate="G$1" pin="33" pad="33"/>
+<connect gate="G$1" pin="34" pad="34"/>
+<connect gate="G$1" pin="35" pad="35"/>
+<connect gate="G$1" pin="36" pad="36"/>
+<connect gate="G$1" pin="37" pad="37"/>
+<connect gate="G$1" pin="38" pad="38"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SHIV_KUMAR" package="1X14MTA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="29" pad="29"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="31" pad="31"/>
+<connect gate="G$1" pin="32" pad="32"/>
+<connect gate="G$1" pin="33" pad="33"/>
+<connect gate="G$1" pin="34" pad="34"/>
+<connect gate="G$1" pin="35" pad="35"/>
+<connect gate="G$1" pin="36" pad="36"/>
+<connect gate="G$1" pin="37" pad="37"/>
+<connect gate="G$1" pin="38" pad="38"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6622,6 +6863,7 @@ RJ45 Jack connectors&lt;br&gt;
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10kohm"/>
 <part name="C23" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/2" package3d_urn="urn:adsk.eagle:package:5415/1" value="0.1uf"/>
 <part name="J1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-156" device="" package3d_urn="urn:adsk.eagle:package:8081562/1"/>
+<part name="U$2" library="esp32_base_footprint" deviceset="LIB1" device="OPTION_HOLE"/>
 </parts>
 <sheets>
 <sheet>
@@ -6780,6 +7022,7 @@ RJ45 Jack connectors&lt;br&gt;
 <attribute name="NAME" x="144.78" y="-15.24" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="140.97" y="-15.24" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="U$2" gate="G$1" x="194.70918125" y="62.500184375" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -6897,9 +7140,9 @@ RJ45 Jack connectors&lt;br&gt;
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IBMS-19"/>
-<label x="104.14" y="35.56" size="1.778" layer="95" xref="yes"/>
+<label x="104.06916875" y="34.284584375" size="1.778" layer="95" xref="yes"/>
 <wire x1="93.98" y1="34.29" x2="101.6" y2="34.29" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="34.29" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="34.29" x2="104.06916875" y2="34.284584375" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="DGND-1"/>
@@ -6924,8 +7167,8 @@ RJ45 Jack connectors&lt;br&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="DGND-20"/>
 <wire x1="93.98" y1="39.37" x2="96.52" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="39.37" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<label x="96.52" y="40.64" size="1.778" layer="95" xref="yes"/>
+<wire x1="96.52" y1="39.37" x2="100.356890625" y2="39.370746875" width="0.1524" layer="91"/>
+<label x="100.356890625" y="39.370746875" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7235,6 +7478,8 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="142.24" y1="-17.78" x2="147.32" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <junction x="142.24" y="-12.7"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="-10.16" x2="142.24" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO19" class="0">
