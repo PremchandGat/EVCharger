@@ -7332,6 +7332,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <sheet>
 <plain>
 <frame x1="-109.22" y1="-160.02" x2="363.22" y2="157.48" columns="8" rows="5" layer="91"/>
+<text x="109.22" y="-10.16" size="1.778" layer="91">ESP32_Base</text>
+<text x="271.78" y="38.1" size="1.778" layer="91">ESP32</text>
+<text x="238.76" y="-101.6" size="1.778" layer="91">LCD, GSM, RFID, GSM external Power</text>
+<text x="106.68" y="-104.14" size="1.778" layer="91">Power 5V to 3.3V</text>
+<text x="-15.24" y="-104.14" size="1.778" layer="91">BOOT, ENABLE, Programming Pins</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="172.72" y="88.9" smashed="yes">

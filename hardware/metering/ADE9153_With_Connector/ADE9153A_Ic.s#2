@@ -358,9 +358,11 @@ RJ45 Jack connectors&lt;br&gt;
 <attribute name="VALUE" x="15.24" y="11.43" size="1.778" layer="96"/>
 </instance>
 <instance part="J2" gate="G$2" x="-22.86" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="-22.86" y="5.08" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-19.05" y="5.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J3" gate="G$2" x="12.7" y="-30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="-7.62" y="-30.48" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-7.62" y="-26.67" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J4" gate="G$2" x="30.48" y="2.54" smashed="yes" rot="R270">
@@ -377,22 +379,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="137.16" y1="-12.7" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
 <label x="144.78" y="-12.7" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="7"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
-<label x="10.16" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="25" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="ZX/DREADY/CF2"/>
 <wire x1="137.16" y1="-15.24" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
 <label x="149.86" y="-15.24" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="8"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
-<label x="12.7" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="8" class="0">
@@ -401,11 +393,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-20.32" x2="66.04" y2="-20.32" width="0.1524" layer="91"/>
 <label x="66.04" y="-20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="1"/>
-<wire x1="-20.32" y1="-15.24" x2="-17.78" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-17.78" y="-15.24" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="7" class="0">
 <segment>
@@ -413,22 +400,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-17.78" x2="66.04" y2="-17.78" width="0.1524" layer="91"/>
 <label x="66.04" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="2"/>
-<wire x1="-20.32" y1="-12.7" x2="-17.78" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-17.78" y="-12.7" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="6" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="IAMS"/>
 <wire x1="71.12" y1="-22.86" x2="66.04" y2="-22.86" width="0.1524" layer="91"/>
 <label x="66.04" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="3"/>
-<wire x1="-20.32" y1="-10.16" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-17.78" y="-10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5" class="0">
@@ -438,11 +415,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="63.5" y1="10.16" x2="63.5" y2="5.08" width="0.1524" layer="91"/>
 <label x="63.5" y="10.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="4"/>
-<wire x1="-20.32" y1="-7.62" x2="-17.78" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-17.78" y="-7.62" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="4" class="0">
 <segment>
@@ -450,22 +422,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="137.16" y1="-7.62" x2="142.24" y2="-7.62" width="0.1524" layer="91"/>
 <label x="142.24" y="-7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="5"/>
-<wire x1="-20.32" y1="-5.08" x2="-17.78" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-17.78" y="-5.08" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="3" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="CLKOUT"/>
 <wire x1="137.16" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
 <label x="147.32" y="-10.16" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="6"/>
-<wire x1="-20.32" y1="-2.54" x2="-17.78" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-17.78" y="-2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="2" class="0">
@@ -475,22 +437,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="55.88" y1="0" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
 <label x="55.88" y="15.24" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="7"/>
-<wire x1="-20.32" y1="0" x2="-17.78" y2="0" width="0.1524" layer="91"/>
-<label x="-17.78" y="0" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="9" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="AGND"/>
 <wire x1="137.16" y1="5.08" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
 <label x="149.86" y="5.08" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="8"/>
-<wire x1="-5.08" y1="-27.94" x2="-5.08" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-5.08" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="10" class="0">
@@ -499,22 +451,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="91"/>
 <label x="53.34" y="-2.54" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="7"/>
-<wire x1="-2.54" y1="-27.94" x2="-2.54" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-2.54" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="11" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="IBN"/>
 <wire x1="71.12" y1="-30.48" x2="60.96" y2="-30.48" width="0.1524" layer="91"/>
 <label x="60.96" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="6"/>
-<wire x1="0" y1="-27.94" x2="0" y2="-22.86" width="0.1524" layer="91"/>
-<label x="0" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="12" class="0">
@@ -523,22 +465,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-27.94" x2="55.88" y2="-27.94" width="0.1524" layer="91"/>
 <label x="55.88" y="-27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="5"/>
-<wire x1="2.54" y1="-27.94" x2="2.54" y2="-22.86" width="0.1524" layer="91"/>
-<label x="2.54" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="13" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="VAMS"/>
 <wire x1="71.12" y1="-7.62" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
 <label x="63.5" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="4"/>
-<wire x1="5.08" y1="-27.94" x2="5.08" y2="-22.86" width="0.1524" layer="91"/>
-<label x="5.08" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="14" class="0">
@@ -548,22 +480,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="53.34" y1="-12.7" x2="53.34" y2="-15.24" width="0.1524" layer="91"/>
 <label x="53.34" y="-15.24" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="3"/>
-<wire x1="7.62" y1="-27.94" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
-<label x="7.62" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="15" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="VAN"/>
 <wire x1="71.12" y1="-10.16" x2="55.88" y2="-10.16" width="0.1524" layer="91"/>
 <label x="55.88" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="2"/>
-<wire x1="10.16" y1="-27.94" x2="10.16" y2="-22.86" width="0.1524" layer="91"/>
-<label x="10.16" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="16" class="0">
@@ -573,22 +495,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="58.42" y1="2.54" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
 <label x="58.42" y="7.62" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$2" pin="1"/>
-<wire x1="12.7" y1="-27.94" x2="12.7" y2="-22.86" width="0.1524" layer="91"/>
-<label x="12.7" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="17" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="AGND_2"/>
 <wire x1="137.16" y1="2.54" x2="147.32" y2="2.54" width="0.1524" layer="91"/>
 <label x="147.32" y="2.54" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="8"/>
-<wire x1="27.94" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
-<label x="25.4" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="18" class="0">
@@ -597,11 +509,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-38.1" x2="63.5" y2="-38.1" width="0.1524" layer="91"/>
 <label x="63.5" y="-38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="7"/>
-<wire x1="27.94" y1="-12.7" x2="25.4" y2="-12.7" width="0.1524" layer="91"/>
-<label x="25.4" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="19" class="0">
 <segment>
@@ -609,22 +516,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-25.4" x2="66.04" y2="-25.4" width="0.1524" layer="91"/>
 <label x="66.04" y="-25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="6"/>
-<wire x1="27.94" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
-<label x="25.4" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="20" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="DGND_2"/>
 <wire x1="137.16" y1="-2.54" x2="149.86" y2="-2.54" width="0.1524" layer="91"/>
 <label x="149.86" y="-2.54" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="5"/>
-<wire x1="27.94" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
-<label x="25.4" y="-7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="21" class="0">
@@ -634,11 +531,6 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-43.18" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
 <label x="63.5" y="-43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="4"/>
-<wire x1="27.94" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
-<label x="25.4" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="22" class="0">
 <segment>
@@ -647,22 +539,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="142.24" y1="-40.64" x2="142.24" y2="-43.18" width="0.1524" layer="91"/>
 <label x="142.24" y="-43.18" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="3"/>
-<wire x1="27.94" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<label x="25.4" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="23" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="FA0"/>
 <wire x1="137.16" y1="-38.1" x2="139.7" y2="-38.1" width="0.1524" layer="91"/>
 <label x="139.7" y="-38.1" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="2"/>
-<wire x1="27.94" y1="0" x2="25.4" y2="0" width="0.1524" layer="91"/>
-<label x="25.4" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="24" class="0">
@@ -672,22 +554,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="66.04" y1="7.62" x2="68.58" y2="10.16" width="0.1524" layer="91"/>
 <label x="68.58" y="10.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$2" pin="1"/>
-<wire x1="27.94" y1="2.54" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
-<label x="25.4" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="27" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="IRQ_N"/>
 <wire x1="137.16" y1="-20.32" x2="142.24" y2="-20.32" width="0.1524" layer="91"/>
 <label x="142.24" y="-20.32" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="6"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
-<label x="7.62" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="28" class="0">
@@ -696,22 +568,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="71.12" y1="-35.56" x2="66.04" y2="-35.56" width="0.1524" layer="91"/>
 <label x="66.04" y="-35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="5"/>
-<wire x1="5.08" y1="12.7" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
-<label x="5.08" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="29" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="MOSI/RX"/>
 <wire x1="137.16" y1="-33.02" x2="152.4" y2="-33.02" width="0.1524" layer="91"/>
 <label x="152.4" y="-33.02" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="4"/>
-<wire x1="2.54" y1="12.7" x2="2.54" y2="10.16" width="0.1524" layer="91"/>
-<label x="2.54" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="30" class="0">
@@ -720,22 +582,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="137.16" y1="-30.48" x2="147.32" y2="-30.48" width="0.1524" layer="91"/>
 <label x="147.32" y="-30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="3"/>
-<wire x1="0" y1="12.7" x2="0" y2="10.16" width="0.1524" layer="91"/>
-<label x="0" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="31" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="SCLK"/>
 <wire x1="142.24" y1="-27.94" x2="137.16" y2="-27.94" width="0.1524" layer="91"/>
 <label x="142.24" y="-27.94" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="2"/>
-<wire x1="-2.54" y1="12.7" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
-<label x="-2.54" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="32" class="0">
@@ -744,22 +596,12 @@ RJ45 Jack connectors&lt;br&gt;
 <wire x1="137.16" y1="-25.4" x2="149.86" y2="-25.4" width="0.1524" layer="91"/>
 <label x="149.86" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J1" gate="G$2" pin="1"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
-<label x="-5.08" y="10.16" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="1" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="DGND"/>
 <wire x1="137.16" y1="0" x2="144.78" y2="0" width="0.1524" layer="91"/>
 <label x="144.78" y="0" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$2" pin="8"/>
-<wire x1="-20.32" y1="2.54" x2="-17.78" y2="2.54" width="0.1524" layer="91"/>
-<label x="-17.78" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="33" class="0">
